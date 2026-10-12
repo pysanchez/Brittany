@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Brittany</title>
+  <!-- Tipografías vintage -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Pantalla de bienvenida -->
+  <section class="welcome-container" id="welcome-screen">
+    <div class="welcome-card">
+      <span class="vintage-stamp">✉</span>
+      <h1 class="welcome-title">Para Brittany, de Brandon</h1>
+      <p class="welcome-subtitle">Tengo algo especial que contarte...</p>
+      <button id="open-btn" class="vintage-btn">Abrir</button>
+    </div>
+  </section>
+
+  <!-- 2. Contenedor de la carta (oculto inicialmente) -->
+  <section class="letter-container hidden" id="letter-screen">
+    
+    <!-- Botón de música Lunita (ahora dentro de la vista de la carta) -->
+    <div class="music-controller">
+      <button id="music-btn" class="vintage-music-btn" title="Reproducir música" aria-label="Reproducir música">
+        <span id="music-icon" class="music-icon">▶</span>
+        <span class="music-label">Lunita</span>
+      </button>
+      <audio id="audio-player" src="lunita.mp3" preload="auto" loop></audio>
+    </div>
+
+    <article class="letter-sheet wrinkled-paper">
+      <!-- Capas de arrugas, pliegues y textura -->
+      <div class="crease horizontal-crease"></div>
+      <div class="crease vertical-crease"></div>
+      <div class="paper-texture-overlay"></div>
+
+      <div class="letter-inner-border">
+        <header class="letter-header">
+          <span class="letter-date">Siempre contigo</span>
+          <h2 class="letter-salutation">Querida Brittany,</h2>
+        </header>
+
+        <div class="letter-body">
+          <p>
+            Aunque no llevamos mucho tiempo hablando, aunque tengas muchas inseguridades y sobrepienses las cosas,
+            aunque sigas pensando en dejarme de hablar, quiero decirte que te quiero muchisimo, que sepas que eres una persona
+            muy especial para mi, no se si creas en lo que te digo o lo que hago, y no estoy seguro de que realmente quieras estar conmigo
+            pero quiero que sepas que me importas mucho y que no quiero perderte, que me encantas y que me gustas mucho, y que me gustaría
+            que me dieras la oportunidad de demostrarte que puedo hacerte feliz, que puedo cuidarte y que puedo hacerte sentir especial, porque eso es lo que quiero hacer por ti,
+            tengo muchisimo por demostrarte, quiero hacer muchisimas cosas contigo, se que no estas para una relacion de un rato y yo tampoco lo estoy,
+            no quiero algo de un rato contigo, si no algo estable, serio y para toda la vida, porque si los muertos aman, despues de muertos amarnos mas.
+          </p>
+
+          <p>
+            Aun asi que no llevemos ni el mes conociendonos, despues de 2 semanas te dije que me gustabas,
+            y afortunadamente yo tambien a ti, me hace demasiado feliz el hecho de que me digas que me quieres y me hayas dicho que yo tambien te gustaba,
+            el hecho de que me abraces y me digas lo que te gusta de mi, o lo que hago, me hace muy feliz verte en la universidad,
+            en el trabajo, mi vida puede ser complicada, se me pueden dificultar muchas cosas, pero realmente es algo que quiero cambiar,
+            quiero que te sientas bien conmigo, me hace sentir muy mal el hecho de que no pueda hacer muchas cosas contigo o por ti,
+            estoy dispuesto a hacer lo que sea por ti, a cambiar lo que sea por ti, a mejorar lo que sea por ti, a aprender lo que sea por ti,
+            en serio me haces muy feliz, te hablo y te hablare con la verdad siempre, no somos nuestra primera vez en todo, 
+            pero quiero que seamos la ultima en todo, que para todo solo seamos tu y yo, no se si estes dispuesta a estar conmigo
+            incluso sabiendo mis defectos, mis errores, problemas, inseguridades, si no lo estas aun estaras en mi corazon, y si lo estas
+            te prometo que hare todo lo posible por ti, y si no es posible busco la manera,
+            me encanta estar junto a ti, me encanta hablar contigo, besarte, abrazarte, acariciarte, verte, escucharte y comer contigo.
+          </p>
+
+          <p>
+            Lunita, no quiero alejarme de ti, quiero acercarme mas a ti cada vez, pasar muchas cosas bonitas y malas juntos,
+            pasar tormentas y dias soleados juntos, quiero estar en tus logros y que estes en mis logros, en tus derrotas y en mis derrotas,
+            Lunita, me gustas mucho, no quiero que esto termine, es todo o es nada, y yo contigo quiero todo.
+          </p>
+
+          <p>
+            Perdon por el hecho de que soy muy pendejo para hablar, no puedo expresar bien lo que siento y pienso, lo explico de una manera
+            totalmente diferente, perdon por mentirte, perdon por no salir a otro lugar, esta es una manera de la que me puedo expresar mejor
+            contigo, las cartas son para expresar tu forma de pensar a tu manera, esta vez lo hice diferente,
+            lo hice mas "yo", quiero hacer las cosas bien contigo, quiero estar bien contigo, quiero hacer todo contigo,
+            no te quiero perder, me tarde mas escribiendo lo que siento por ti que haciendo la pagina lol, pero no es algo que me pese,
+            todo con lo que tengas que ver tu no me pesa, no me molesta y no me provoca nada malo, puede generarte conflicto que sea menor que tu,
+            pero arreglare eso, no soy como piensas si piensas que tengo un pensamiento inmaduro, o si no estoy listo para esto.
+          </p>
+
+          <p class="letter-closing">
+            No te cambiaría por nada.<br>
+            Te quiero muchisimo.
+          </p>
+        </div>
+
+        <footer class="letter-footer">
+          <p class="letter-signature">Con todo mi amor,</p>
+          <span class="letter-name">Brandon</span>
+        </footer>
+      </div>
+    </article>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
